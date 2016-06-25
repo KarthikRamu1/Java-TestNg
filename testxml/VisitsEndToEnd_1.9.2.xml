@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Visits End To End" allow-return-values="true">
+   
+   
+    <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>       
+  
+  <parameter name="webSite" value="https://108.161.43.79:8443/"/>
+  <parameter name="seleniumHost" value="10.1.13.92"/>
+  <parameter name="seleniumPort" value="4445"/>    
+  <parameter name="userAccount" value="CA2000"/> 
+  <parameter name="browser" value="firefox"/> 
+   <test name="NexiaDriver" parallel="classes" thread-count="1"> 
+   
+        
+   <classes>
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitOne"/>
+     
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitTwo"/>
+   
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitThree"/>
+    
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitFive"/>
+       
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitSix"/>
+      
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitSeven"/>
+       
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitEight"/>
+       
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitNine"/>
+        
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitTen"/>
+        
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitEleven"/>
+        
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitTwelve"/>
+       
+       </classes>
+        </test>   
+  </suite>

@@ -1,0 +1,67 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="EncounterEndToEnd" allow-return-values="true">
+   
+    <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>       
+  
+  <parameter name="webSite" value="https://nexia-qa3.nexia.local:8443/"/>
+  <parameter name="seleniumHost" value="10.1.13.93"/>
+  <parameter name="seleniumPort" value="4445"/>    
+  <parameter name="userAccount" value="CA2000"/> 
+  <parameter name="browser" value="FIREFOX"/> 
+
+ <test name="NexiaDriver" parallel="classes" thread-count="1"> 
+   
+  <classes>
+      <class name="com.projectname.test.functional.clinicalsettings.practiceLibrary.VerifycustomdefinedcomponentsAndsections">
+        <methods>
+          <include name="encounterTemplateEndToEnd" invocation-numbers="0"/>
+        </methods>
+      </class>     
+    
+    <!--   <class name="com.projectname.test.functional.clinicalsettings.practiceLibrary.CoSignEncounter">
+        <methods>
+          <include name="verifyCoSignEncounter" invocation-numbers="0"/>
+        </methods>
+      </class>    
+    
+      <class name="com.projectname.test.functional.clinicalsettings.practiceLibrary.VerifySavedEncounterValuesinEditView">
+        <methods>
+          <include name="verifySavedEncounterValuesinEditView" invocation-numbers="0"/>
+        </methods>
+      </class>     
+    
+      <class name="com.projectname.test.functional.clinicalsettings.practiceLibrary.CreateMangaedCareTemplate">
+        <methods>
+          <include name="addFlowSheetAndCareElements" invocation-numbers="0"/>
+        </methods>
+     </class>   --> 
+     </classes>  
+     
+   </test>  
+</suite>
+   
+<!--   <test name="NexiaDriver">
+  <classes>
+      <class name="com.projectname.test.functional.demographics.patientcreation.CreateNewPatient">
+        <methods>
+          <include name="createPatient" invocation-numbers="0"/>
+        </methods>
+     </class>   
+     </classes>      
+     </test>   -->   
+   <!--  <test name="com.projectname.test.functional.modulename">
+    <packages>
+      <package name="com.projectname.test.functional.modulename1.*"/>
+    </packages>
+	</test>
+	
+	 <test name="com.projectname.test.functional.modulename1">
+    <packages>
+      <package name="com.projectname.test.functional.modulename2.*"/>
+    </packages>
+	</test> -->
+ <!-- [Selenium Automated QA Test]] -->

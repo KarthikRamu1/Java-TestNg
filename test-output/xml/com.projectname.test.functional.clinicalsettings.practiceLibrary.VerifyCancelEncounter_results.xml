@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.projectname.test.functional.clinicalsettings.practiceLibrary.VerifyCancelEncounter"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="2"
+           time="0.001">
+  <properties />
+  
+
+      <testcase name="genericSetUp" time="0.0">
+      <skipped />
+    </testcase>
+      <testcase name="verifyCancelEncounter" time="0.0">
+      <skipped />
+    </testcase>
+  
+
+  
+
+</testsuite>

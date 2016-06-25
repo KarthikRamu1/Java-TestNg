@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [EncounterEndToEnd]" allow-return-values="true">
+  <parameter name="webSite" value="https:www.google.com"/>
+  <parameter name="seleniumPort" value="5555"/>
+  <parameter name="userAccount" value="CA2000"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="seleniumHost" value="localhost"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="NexiaDriver(failed)" parallel="classes">
+    <classes>
+      <class name="com.projectname.test.functional.clinicalsettings.practiceLibrary.CoSignEncounter">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyCoSignEncounter"/>
+        </methods>
+      </class> <!-- com.projectname.test.functional.clinicalsettings.practiceLibrary.CoSignEncounter -->
+      <class name="com.projectname.test.functional.clinicalsettings.practiceLibrary.VerifyCancelEncounter">
+        <methods>
+          <include name="verifyCancelEncounter"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.projectname.test.functional.clinicalsettings.practiceLibrary.VerifyCancelEncounter -->
+      <class name="com.projectname.test.functional.clinicalsettings.practiceLibrary.EncounterEndToEndSix">
+        <methods>
+          <include name="genericSetUp"/>
+          <include name="tearDown"/>
+          <include name="verifyEncounterEndToEndSix" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.projectname.test.functional.clinicalsettings.practiceLibrary.EncounterEndToEndSix -->
+      <class name="com.projectname.test.functional.clinicalsettings.practiceLibrary.Verifyremoveandpresentreusewidget">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyremoveandpresentreusewidgets"/>
+        </methods>
+      </class> <!-- com.projectname.test.functional.clinicalsettings.practiceLibrary.Verifyremoveandpresentreusewidget -->
+    </classes>
+  </test> <!-- NexiaDriver(failed) -->
+</suite> <!-- Failed suite [EncounterEndToEnd] -->

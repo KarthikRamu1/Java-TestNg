@@ -1,0 +1,10 @@
+25-Jun-2016 14:51:48:060 INFO  livechatenableverification:411 - navigate to the url: https://livechat.freshcmdb.com/support/login
+25-Jun-2016 14:51:49:156 INFO  livechatenableverification:411 - Successfully navigated to the url: https://livechat.freshcmdb.com/support/login
+25-Jun-2016 14:52:03:887 INFO  livechatenableverification:194 - =====================================================================================================
+25-Jun-2016 14:52:04:821 INFO  livechatenableverification:203 - App URL    : https://livechat.freshcmdb.com/support/login
+25-Jun-2016 14:52:05:839 INFO  livechatenableverification:204 - Browser    : *firefox
+25-Jun-2016 14:52:06:265 INFO  livechatenableverification:205 - =====================================================================================================
+25-Jun-2016 14:53:01:993 INFO  livechatenableverification:411 - Login to application
+25-Jun-2016 14:56:55:815 INFO  livechatenableverification:330 - Captured Screenshot : /working copy/QA-MedriumClinical-2.0_WD/QA-MedriumClinical-2.0_WD/test-output/screenshots/Verifychatsanity1 25-Jun-2016 14-56-55.png
+25-Jun-2016 14:56:57:980 ERROR livechatenableverification:336 - The following error has occured while capturing a screen shot : /working copy/QA-MedriumClinical-2.0_WD/QA-MedriumClinical-2.0_WD/test-output/screenshots/Verifychatsanity1 25-Jun-2016 14-56-55.png (No such file or directory)
+25-Jun-2016 14:56:58:000 INFO  livechatenableverification:347 - The test result for Verifychatsanity1 is FAIL

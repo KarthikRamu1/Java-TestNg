@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Medrium Selenium Automated QA Test" preserve-order="false" parallel="tests">
+  <parameter name="webSite" value="https://108.161.43.83:8443/"/>
+   <parameter name="browser" value="*firefox"/>
+  <parameter name="seleniumHost" value="localhost"/>
+  <parameter name="seleniumPort" value="4444"/>
+  <parameter name="userAccount" value="CA2000" /> 
+  
+  <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners> 
+  
+  <test name="Nexia Regression - Cancel Encounter" parallel="classes" thread-count="5">
+ 
+   <groups>  
+		   <define name="CA">    
+		      <include name="Regression"/>           
+		    </define>
+		   
+		    <run>
+		    	 <include name="CA"/>
+		    </run>
+		    
+	</groups>  
+    
+    <packages>
+      
+      <!-- Cancel Encounter Testcases -->
+	  <package name="com.projectname.test.functional.chartprevisist.encounterEndToEnd.verifyCancel.*"/>  	  
+         
+    </packages>    
+  </test><!-- Nexia -->
+  
+</suite> <!-- [Medrium Selenium Automated QA Test Smoke Test]] -->

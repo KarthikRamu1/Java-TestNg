@@ -1,0 +1,55 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="EncounterEndToEnd" allow-return-values="true">
+   
+    <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>       
+  
+  <parameter name="webSite" value="https://nexia-qa3.nexia.local:8443/"/>
+  <parameter name="seleniumHost" value="10.1.13.92"/>
+  <parameter name="seleniumPort" value="5555"/>    
+  <parameter name="userAccount" value="CA2000"/> 
+  <parameter name="browser" value="firefox"/> 
+
+ <test name="NexiaDriver" parallel="classes" thread-count="1"> 
+   
+  <classes>
+      <class name="com.projectname.test.functional.clinicalsettings.practiceLibrary.EncounterEndToEndOne">
+        <methods>
+          <include name="verifyEncounterEndToEndOne" invocation-numbers="0"/>
+        </methods>
+     </class>     
+    
+     <class name="com.projectname.test.functional.clinicalsettings.practiceLibrary.EncounterEndToEndSecond">
+        <methods>
+          <include name="verifyCancelEncounter" invocation-numbers="0"/>
+        </methods>
+     </class>     
+     
+      <class name="com.projectname.test.functional.clinicalsettings.practiceLibrary.EncounterEndToEndThird">
+        <methods>
+          <include name="verifyEncounterEndToEndThird" invocation-numbers="0"/>
+        </methods>
+     </class>     
+     
+      <class name="com.projectname.test.functional.clinicalsettings.practiceLibrary.EncounterEndToEndFour">
+        <methods>
+          <include name="verifyEncounterEndToEndFour" invocation-numbers="0"/>
+        </methods>
+     </class>     
+     
+      <class name="com.projectname.test.functional.clinicalsettings.practiceLibrary.EncounterEndToEndFive">
+        <methods>
+          <include name="verifyEncounterEndToEndFive" invocation-numbers="0"/>
+        </methods>
+     </class>     
+     
+          
+    
+     </classes>  
+     
+   </test>  
+</suite>
+

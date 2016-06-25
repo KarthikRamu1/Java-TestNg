@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Selenium Automation Framework]" allow-return-values="true">
+  <parameter name="webSite" value="http://livechat.freshcmdb.com/support/login"/>
+  <parameter name="seleniumPort" value="5555"/>
+  <parameter name="userAccount" value="CA2000"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="seleniumHost" value="localhost"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="NexiaDriver(failed)">
+    <classes>
+      <class name="com.projectname.test.livechat.livechatenableverification">
+        <methods>
+          <include name="genericSetUp"/>
+          <include name="Verifychatsanity1" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.projectname.test.livechat.livechatenableverification -->
+    </classes>
+  </test> <!-- NexiaDriver(failed) -->
+</suite> <!-- Failed suite [Selenium Automation Framework] -->

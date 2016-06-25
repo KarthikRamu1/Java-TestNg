@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Encounter_ETE_Delete_Summary_Items" allow-return-values="true">
+
+
+  
+  <parameter name="webSite" value="https://nexia-dev6.nexia.local/"/>  
+  <parameter name="userAccount" value="CA2000"/> 
+  <parameter name="browser" value="FIREFOX"/>
+  <parameter name="seleniumHost" value="localhost"/>
+  <parameter name="seleniumPort" value="4444"/> 
+
+  
+    <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>        
+
+ <test name="NexiaDriver" parallel="classes" thread-count="4"> 
+   
+  <classes>
+  
+      
+      <class name="com.projectname.test.functional.chartprevisist.encounterEndToEnd.deleteencountersummaryitem.VerifySaveEditandDeleteEncounterTwo"/>
+      
+   
+     </classes>  
+     
+   </test>  
+</suite>

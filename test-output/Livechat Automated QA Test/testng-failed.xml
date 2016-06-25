@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Livechat Automated QA Test]">
+  <parameter name="webSite" value="https://livechat.freshcmdb.com/support/login"/>
+  <parameter name="seleniumPort" value="4444"/>
+  <parameter name="browser" value="*firefox"/>
+  <parameter name="userAccount" value="CA2000"/>
+  <parameter name="seleniumHost" value="localhost"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Regression tests for Livechat(failed)" parallel="methods">
+    <groups>
+      <run>
+        <include name="CA"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.projectname.test.livechat.livechatenableverification">
+        <methods>
+          <include name="genericSetUp"/>
+          <include name="Verifychatsanity1" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.projectname.test.livechat.livechatenableverification -->
+    </classes>
+  </test> <!-- Regression tests for Livechat(failed) -->
+</suite> <!-- Failed suite [Livechat Automated QA Test] -->

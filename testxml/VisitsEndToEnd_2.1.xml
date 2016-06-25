@@ -1,0 +1,112 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Visits End To End" allow-return-values="true">
+   
+     <test name="EndToEndVisitOne"  preserve-order="true">
+   		<parameter name="webSite" value="https://108.161.43.79:8443/"/>  
+ 		 <parameter name="userAccount" value="US2000"/> 
+   		 <parameter name="browser" value="FIREFOX"/>
+    
+   <classes>
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitOne"/>
+    </classes> 
+    </test>
+     
+      <test name="EndToEndVisitTwo"  preserve-order="true">
+   		<parameter name="webSite" value="https://108.161.43.79:8443/"/>  
+ 		 <parameter name="userAccount" value="US2000"/> 
+   		 <parameter name="browser" value="FIREFOX"/> 
+    <classes>
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitTwo"/>
+    </classes> 
+     </test>  
+    
+    <test name="EndToEndVisitThre"  preserve-order="true">
+   		<parameter name="webSite" value="https://108.161.43.79:8443/"/>  
+ 		 <parameter name="userAccount" value="US2000"/> 
+   		 <parameter name="browser" value="FIREFOX"/>
+    <classes>
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitThree"/>
+    </classes>  
+     </test>
+    
+    <test name="EndToEndVisitFive"  preserve-order="true">
+   		<parameter name="webSite" value="https://108.161.43.79:8443/"/>  
+ 		 <parameter name="userAccount" value="US2000"/> 
+   		 <parameter name="browser" value="FIREFOX"/>
+      <classes>
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitFive"/>
+        </classes>
+         </test>    
+        
+     <test name="EndToEndVisitSix"  preserve-order="true">
+   		<parameter name="webSite" value="https://108.161.43.79:8443/"/>  
+ 		 <parameter name="userAccount" value="US2000"/> 
+   		 <parameter name="browser" value="FIREFOX"/>
+      <classes>
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitSix"/>
+       </classes>  
+        </test>  
+      
+      <test name="EndToEndVisitSeven"  preserve-order="true">
+   		<parameter name="webSite" value="https://108.161.43.79:8443/"/>  
+ 		 <parameter name="userAccount" value="US2000"/> 
+   		 <parameter name="browser" value="FIREFOX"/>
+      <classes>
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitSeven"/>
+        </classes> 
+         </test>  
+         
+      <test name="EndToEndVisitEight"  preserve-order="true">
+   		<parameter name="webSite" value="https://108.161.43.79:8443/"/>  
+ 		 <parameter name="userAccount" value="US2000"/> 
+   		 <parameter name="browser" value="FIREFOX"/>
+      <classes>
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitEight"/>
+       </classes> 
+        </test>   
+       
+      <test name="EndToEndVisitNine"  preserve-order="true">
+   		<parameter name="webSite" value="https://108.161.43.79:8443/"/>  
+ 		 <parameter name="userAccount" value="US2000"/> 
+   		 <parameter name="browser" value="FIREFOX"/>
+      <classes>
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitNine"/>
+        </classes>  
+         </test>  
+        
+      <test name="EndToEndVisitTen"  preserve-order="true">
+   		<parameter name="webSite" value="https://108.161.43.79:8443/"/>  
+ 		 <parameter name="userAccount" value="US2000"/> 
+   		 <parameter name="browser" value="FIREFOX"/>
+      <classes>
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitTen"/>
+        </classes> 
+         </test>   
+        
+      <test name="EndToEndVisitEleven"  preserve-order="true">
+   		<parameter name="webSite" value="https://108.161.43.79:8443/"/>  
+ 		 <parameter name="userAccount" value="US2000"/> 
+   		 <parameter name="browser" value="FIREFOX"/>
+      <classes>
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitEleven"/>
+         </classes> 
+          </test>   
+         
+      <test name="EndToEndVisitTwelve"  preserve-order="true">
+   		<parameter name="webSite" value="https://108.161.43.79:8443/"/>  
+ 		 <parameter name="userAccount" value="US2000"/> 
+   		 <parameter name="browser" value="FIREFOX"/>
+      <classes>
+      <class name="com.projectname.test.functional.demographics.endtoendvisit.EndToEndVisitTwelve"/>
+       </classes>
+        </test>   
+       
+       <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners> 
+        
+   
+	
+</suite>

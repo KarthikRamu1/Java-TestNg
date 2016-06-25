@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Test Results Report - Regression tests for Livechat</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<div class="title">Regression tests for Livechat</div>
+<div class="small" style="margin-bottom: 15px;">
+  Test Duration: 465.818s
+</div>
+
+
+<table class="resultsTable" width="100%">
+      <tr><td colspan="3" class="header failed">Failed Tests</td></tr>
+              <tr>
+        <td colspan="3" class="group">com.projectname.test.livechat.livechatenableverification</td>
+      </tr>
+      
+<tr>
+  <td>
+    Verifychatsanity1
+          <div class="description">
+        (Test for Verify Referral By Practice Option)
+      </div>
+      </td>
+  <td class="duration">
+    243.114s
+  </td>
+  <td class="result">
+        
+          <i>Method Arguments: </i><span class="arguments">"CA2000", "https://livechat.freshcmdb.com/support/login", "*firefox", "localhost", "4444"</span><br />
+    
+        
+
+        <a href="javascript:toggleDiv('exception-0')" title="Click to expand/collapse"><b>java.lang.AssertionError: com.projectname.testutils.seleniumutils.SeleniumWebDriver.type.368 expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              com.projectname.testutils.baseclass.TestBaseClass.failNotEquals(TestBaseClass.java:449)<br />
+              com.projectname.testutils.genericutility.ExceptionHandler.takeScreenshot(ExceptionHandler.java:71)<br />
+              com.projectname.testutils.genericutility.ExceptionHandler.&lt;init&gt;(ExceptionHandler.java:42)<br />
+              com.projectname.testutils.seleniumutils.SeleniumWebDriver.sendKeys(SeleniumWebDriver.java:393)<br />
+              com.projectname.testutils.seleniumutils.SeleniumWebDriver.type(SeleniumWebDriver.java:368)<br />
+              com.projectname.testutils.pages.LoginPage.loginFS(LoginPage.java:61)<br />
+              com.projectname.test.livechat.livechatenableverification.verifychaticonsindashboard(livechatenableverification.java:85)<br />
+              com.projectname.test.livechat.livechatenableverification.Verifychatsanity1(livechatenableverification.java:32)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
+              java.lang.Thread.run(Thread.java:745)<br />
+                </div>
+      </td>
+</tr>
+        <tr style="border: 0;"><td colspan="3">&nbsp;</td></tr>
+  
+  
+    
+</table>
+</body>
+</html>
