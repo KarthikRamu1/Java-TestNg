@@ -27,7 +27,7 @@
     <packages>
       
       <!-- Cancel Encounter Testcases -->
-	  <package name="com.projectname.test.livechat.*"/>  	  
+	  <package name="com.projectname.test.functional.livechat.*"/>  	  
          
     </packages>    
   </test><!-- Nexia -->
