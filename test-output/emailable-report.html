@@ -31,15 +31,127 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Regression tests for Livechat</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">468.6 seconds</td><td class="numi">Regression CA </td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Regression tests for Livechat</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">59.6 seconds</td><td class="numi">Regression CA </td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Regression tests for Livechat &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">com.projectname.test.livechat.livechatenableverification</td><td><a href="#m1"><b>Verifychatsanity1</b> (Regression) ("Test for Verify Referral By Practice Option")</a></td><td class="numi">1</td><td>1466846572472</td><td class="numi">243114</td></tr>
+<tr><th colspan="4">Regression tests for Livechat &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.projectname.test.functional.livechat.livechatenableverification</td><td><a href="#m1"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1466860081281</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Regression tests for Livechat &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.projectname.test.functional.livechat.livechatenableverification</td><td><a href="#m2"><b>Verifychatsanity1</b> (Regression) ("Test for Verify Referral By Practice Option")</a></td><td class="numi">1</td><td>1466860051027</td><td class="numi">30250</td></tr>
 </table>
 <h1>Regression tests for Livechat</h1>
-<h2 id="m1">com.projectname.test.livechat.livechatenableverification:Verifychatsanity1</h2>
+<h2 id="m1">com.projectname.test.functional.livechat.livechatenableverification:tearDown</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[TestResult name=Verifychatsanity1 status=SUCCESS method=livechatenableverification.Verifychatsanity1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.projectname.test.functional.livechat.livechatenableverification@10d59286] output={null}]</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Chan.local&apos;, ip: &apos;192.168.56.169&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.2&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
+<br/>at com.projectname.testutils.baseclass.TestBaseClass.tearDown(TestBaseClass.java:349)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:497)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+<br/>at java.lang.Thread.run(Thread.java:745)
+<br/>1 lines not shown
+<p>Caused by Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused</p>
+org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
+<br/>at com.projectname.testutils.baseclass.TestBaseClass.tearDown(TestBaseClass.java:349)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:497)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+<br/>at java.lang.Thread.run(Thread.java:745)
+<br/>1 lines not shown
+<p>Caused by Connection refused</p>
+java.net.PlainSocketImpl.socketConnect(Native Method)
+<br/>at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+<br/>at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+<br/>at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+<br/>at java.net.Socket.connect(Socket.java:589)
+<br/>at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+<br/>at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
+<br/>at com.projectname.testutils.baseclass.TestBaseClass.tearDown(TestBaseClass.java:349)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:497)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+<br/>at java.lang.Thread.run(Thread.java:745)
+<br/>1 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.projectname.test.functional.livechat.livechatenableverification:Verifychatsanity1</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr>
 <tr class="param stripe"><td>CA2000</td>
@@ -48,19 +160,6 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <td>localhost</td>
 <td>4444</td>
 </tr>
-<tr><td style="padding-left:3em" colspan="5">
-<p>com.projectname.testutils.seleniumutils.SeleniumWebDriver.type.368 expected [true] but found [false]</p>
-org.testng.Assert.fail(Assert.java:94)
-<br/>at com.projectname.testutils.baseclass.TestBaseClass.failNotEquals(TestBaseClass.java:449)
-<br/>at com.projectname.testutils.genericutility.ExceptionHandler.takeScreenshot(ExceptionHandler.java:71)
-<br/>at com.projectname.testutils.genericutility.ExceptionHandler.&lt;init&gt;(ExceptionHandler.java:42)
-<br/>at com.projectname.testutils.seleniumutils.SeleniumWebDriver.sendKeys(SeleniumWebDriver.java:393)
-<br/>at com.projectname.testutils.seleniumutils.SeleniumWebDriver.type(SeleniumWebDriver.java:368)
-<br/>at com.projectname.testutils.pages.LoginPage.loginFS(LoginPage.java:61)
-<br/>at com.projectname.test.livechat.livechatenableverification.verifychaticonsindashboard(livechatenableverification.java:85)
-<br/>at com.projectname.test.livechat.livechatenableverification.Verifychatsanity1(livechatenableverification.java:32)
-<br/>14 lines not shown
-</td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

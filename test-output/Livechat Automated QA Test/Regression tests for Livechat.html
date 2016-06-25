@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Regression tests for Livechat</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jun 25 14:49:09 IST 2016</td>
+<td>Started on:</td><td>Sat Jun 25 18:37:02 IST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>468 seconds (468563 ms)</td>
+<tr><td>Total time:</td><td>59 seconds (59598 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>Regression CA </td>
 </tr><tr>
@@ -68,43 +68,69 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.projectname.test.livechat.livechatenableverification.Verifychatsanity1()'><b>Verifychatsanity1</b><br>Test class: com.projectname.test.livechat.livechatenableverification<br>Test method: Test for Verify Referral By Practice Option<br>Parameters: CA2000, https://livechat.freshcmdb.com/support/login, *firefox, localhost, 4444</td>
-<td><div><pre>java.lang.AssertionError: com.projectname.testutils.seleniumutils.SeleniumWebDriver.type.368 expected [true] but found [false]
-	at com.projectname.testutils.baseclass.TestBaseClass.failNotEquals(TestBaseClass.java:449)
-	at com.projectname.testutils.genericutility.ExceptionHandler.takeScreenshot(ExceptionHandler.java:71)
-	at com.projectname.testutils.genericutility.ExceptionHandler.&lt;init&gt;(ExceptionHandler.java:42)
-	at com.projectname.testutils.seleniumutils.SeleniumWebDriver.sendKeys(SeleniumWebDriver.java:393)
-	at com.projectname.testutils.seleniumutils.SeleniumWebDriver.type(SeleniumWebDriver.java:368)
-	at com.projectname.testutils.pages.LoginPage.loginFS(LoginPage.java:61)
-	at com.projectname.test.livechat.livechatenableverification.verifychaticonsindashboard(livechatenableverification.java:85)
-	at com.projectname.test.livechat.livechatenableverification.Verifychatsanity1(livechatenableverification.java:32)
+<td title='com.projectname.test.functional.livechat.livechatenableverification.tearDown()'><b>tearDown</b><br>Test class: com.projectname.test.functional.livechat.livechatenableverification<br>Parameters: [TestResult name=Verifychatsanity1 status=SUCCESS method=livechatenableverification.Verifychatsanity1(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.projectname.test.functional.livechat.livechatenableverification@10d59286] output={null}]</td>
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Chan.local&apos;, ip: &apos;192.168.56.169&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.2&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
+	at com.projectname.testutils.baseclass.TestBaseClass.tearDown(TestBaseClass.java:349)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1482993828", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1482993828'><pre>java.lang.AssertionError: com.projectname.testutils.seleniumutils.SeleniumWebDriver.type.368 expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.projectname.testutils.baseclass.TestBaseClass.failNotEquals(TestBaseClass.java:449)
-	at com.projectname.testutils.genericutility.ExceptionHandler.takeScreenshot(ExceptionHandler.java:71)
-	at com.projectname.testutils.genericutility.ExceptionHandler.&lt;init&gt;(ExceptionHandler.java:42)
-	at com.projectname.testutils.seleniumutils.SeleniumWebDriver.sendKeys(SeleniumWebDriver.java:393)
-	at com.projectname.testutils.seleniumutils.SeleniumWebDriver.type(SeleniumWebDriver.java:368)
-	at com.projectname.testutils.pages.LoginPage.loginFS(LoginPage.java:61)
-	at com.projectname.test.livechat.livechatenableverification.verifychaticonsindashboard(livechatenableverification.java:85)
-	at com.projectname.test.livechat.livechatenableverification.Verifychatsanity1(livechatenableverification.java:32)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 18 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 32 more
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace112344824", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace112344824'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Chan.local&apos;, ip: &apos;192.168.56.169&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.2&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
+	at com.projectname.testutils.baseclass.TestBaseClass.tearDown(TestBaseClass.java:349)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:497)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
@@ -112,9 +138,49 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:318)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 18 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:123)
+	... 32 more
 </pre></div></td>
-<td>243</td>
-<td>com.projectname.test.livechat.livechatenableverification@7d4f9aae</td></tr>
+<td>0</td>
+<td>com.projectname.test.functional.livechat.livechatenableverification@10d59286</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.projectname.test.functional.livechat.livechatenableverification.Verifychatsanity1()'><b>Verifychatsanity1</b><br>Test class: com.projectname.test.functional.livechat.livechatenableverification<br>Test method: Test for Verify Referral By Practice Option<br>Parameters: CA2000, https://livechat.freshcmdb.com/support/login, *firefox, localhost, 4444</td>
+<td></td>
+<td>30</td>
+<td>com.projectname.test.functional.livechat.livechatenableverification@10d59286</td></tr>
 </table><p>
 </body>
 </html>
